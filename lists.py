@@ -4,6 +4,8 @@ you run this file.
 """
 
 
+
+
 def print_list(items):
     """Print each item in the input list.
     
@@ -154,8 +156,12 @@ def sum_numbers(numbers):
         >>> sum_numbers([])
         0
     """
+    
+    total = 0
+    for n in numbers:
+        total += n 
 
-    return None
+    return total
 
 
 def mult_numbers(numbers):
