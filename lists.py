@@ -235,7 +235,7 @@ def average(numbers):
     a feel free to provide a good solution here.)
     """
 
-    return 0
+    return sum(numbers) / len(numbers)
 
 
 def join_strings_with_comma(words):
