@@ -255,8 +255,15 @@ def join_strings_with_comma(words):
         'Pretzel'
     """
 
-    return ""
+    # result = ''
+    # for w in words[:-1]:
+    #     result += w + ", "
+    # result += words[-1]
+    
+    # return result
 
+    return ", ".join(words)
+    
 
 def reverse_list(items):
     """Return the input list, reversed.
