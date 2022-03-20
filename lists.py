@@ -100,7 +100,13 @@ def largest_int(numbers):
         True
     """
 
-    return 0
+    largest = None
+
+    for n in numbers:
+        if largest == None or n > largest:
+            largest = n
+        
+    return largest
 
 
 def halvesies(numbers):
