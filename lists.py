@@ -309,7 +309,10 @@ def reverse_list_in_place(items):
         ['I', 'love', 'cookies']
     """
 
-    return []
+    for i in range(len(items) // 2):
+        temp_save = items[i]
+        items[i] = items[(i+1) * -1]
+        items[(i+1) * -1] = temp_save
 
 
 def duplicates(items):
